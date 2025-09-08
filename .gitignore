@@ -12,6 +12,10 @@ build/
 out/
 release/
 
+# Portable builds and distributions
+hayati-portable/
+*.zip
+
 # OS generated files
 .DS_Store
 .DS_Store?
