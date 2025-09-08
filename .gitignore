@@ -11,6 +11,8 @@ dist/
 build/
 out/
 release/
+dist-electron/
+dist-packaged/
 
 # Portable builds and distributions
 hayati-portable/
