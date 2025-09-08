@@ -1,0 +1,149 @@
+{
+  "common": {
+    "add": "إضافة",
+    "edit": "تعديل",
+    "delete": "حذف",
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "close": "إغلاق",
+    "confirm": "تأكيد",
+    "yes": "نعم",
+    "no": "لا",
+    "today": "اليوم",
+    "yesterday": "أمس",
+    "tomorrow": "غداً",
+    "completed": "مكتمل",
+    "pending": "معلق",
+    "all": "الكل",
+    "priority": "الأولوية",
+    "category": "الفئة",
+    "description": "الوصف",
+    "title": "العنوان",
+    "name": "الاسم",
+    "settings": "الإعدادات",
+    "search": "بحث"
+  },
+  "nav": {
+    "dashboard": "لوحة التحكم",
+    "tasks": "المهام",
+    "habits": "العادات",
+    "prayers": "الصلوات",
+    "calendar": "التقويم",
+    "settings": "الإعدادات"
+  },
+  "dashboard": {
+    "title": "لوحة التحكم",
+    "todaysTasks": "مهام اليوم",
+    "habitsProgress": "تقدم العادات",
+    "nextPrayer": "الصلاة القادمة",
+    "streak": "سلسلة",
+    "tasksCompleted": "المهام المكتملة",
+    "dailyGoals": "الأهداف اليومية"
+  },
+  "tasks": {
+    "title": "المهام",
+    "addTask": "إضافة مهمة",
+    "editTask": "تعديل المهمة",
+    "newTask": "مهمة جديدة",
+    "taskTitle": "عنوان المهمة",
+    "taskDescription": "وصف المهمة",
+    "dueDate": "تاريخ الاستحقاق",
+    "priority": {
+      "low": "منخفضة",
+      "medium": "متوسطة", 
+      "high": "عالية",
+      "urgent": "عاجلة"
+    },
+    "categories": {
+      "daily": "يومية",
+      "study": "دراسة",
+      "health": "صحة",
+      "shopping": "تسوق",
+      "work": "عمل",
+      "personal": "شخصية",
+      "religious": "دينية"
+    },
+    "noTasks": "لا توجد مهام",
+    "noCompletedTasks": "لا توجد مهام مكتملة",
+    "deleteConfirm": "هل تريد حذف هذه المهمة؟",
+    "markComplete": "تحديد كمكتمل",
+    "markIncomplete": "تحديد كغير مكتمل"
+  },
+  "habits": {
+    "title": "العادات",
+    "addHabit": "إضافة عادة",
+    "editHabit": "تعديل العادة",
+    "newHabit": "عادة جديدة",
+    "habitName": "اسم العادة",
+    "habitDescription": "وصف العادة",
+    "frequency": "التكرار",
+    "targetCount": "الهدف اليومي",
+    "currentStreak": "السلسلة الحالية",
+    "longestStreak": "أطول سلسلة",
+    "reminderTime": "وقت التذكير",
+    "categories": {
+      "religious": "دينية",
+      "health": "صحة",
+      "study": "دراسة",
+      "personal": "شخصية"
+    },
+    "frequencies": {
+      "daily": "يومياً",
+      "weekly": "أسبوعياً"
+    },
+    "markDone": "تم الإنجاز",
+    "days": "أيام",
+    "noHabits": "لا توجد عادات"
+  },
+  "prayers": {
+    "title": "الصلوات",
+    "nextPrayer": "الصلاة القادمة",
+    "prayerTimes": "مواقيت الصلاة",
+    "fajr": "الفجر",
+    "dhuhr": "الظهر", 
+    "asr": "العصر",
+    "maghrib": "المغرب",
+    "isha": "العشاء",
+    "prayerLog": "سجل الصلوات",
+    "markPrayed": "تحديد كمؤداة",
+    "prayedAt": "صليت في",
+    "location": {
+      "mosque": "المسجد",
+      "home": "المنزل",
+      "work": "العمل",
+      "other": "مكان آخر"
+    },
+    "onTime": "في الوقت",
+    "late": "متأخر"
+  },
+  "settings": {
+    "title": "الإعدادات",
+    "language": "اللغة",
+    "theme": "المظهر",
+    "notifications": "الإشعارات",
+    "location": "الموقع",
+    "city": "المدينة",
+    "enableNotifications": "تفعيل الإشعارات",
+    "prayerReminders": "تذكير الصلوات",
+    "habitReminders": "تذكير العادات", 
+    "taskReminders": "تذكير المهام",
+    "themes": {
+      "light": "فاتح",
+      "dark": "داكن"
+    },
+    "languages": {
+      "ar": "العربية",
+      "en": "English"
+    }
+  },
+  "messages": {
+    "taskAdded": "تم إضافة المهمة بنجاح",
+    "taskUpdated": "تم تحديث المهمة بنجاح",
+    "taskDeleted": "تم حذف المهمة بنجاح",
+    "habitAdded": "تم إضافة العادة بنجاح",
+    "habitUpdated": "تم تحديث العادة بنجاح",
+    "habitDeleted": "تم حذف العادة بنجاح",
+    "settingsSaved": "تم حفظ الإعدادات بنجاح",
+    "error": "حدث خطأ، يرجى المحاولة مرة أخرى"
+  }
+}

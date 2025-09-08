@@ -1,0 +1,42 @@
+/* Global styles for Life Management App */
+
+.page-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-container h1 {
+  font-size: 28px;
+  margin-bottom: 24px;
+  color: #212121;
+  text-align: right;
+}
+
+.page-container p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #757575;
+  margin-bottom: 16px;
+  text-align: right;
+}
+
+/* RTL support */
+.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+.ltr {
+  direction: ltr;
+  text-align: left;
+}
+
+/* Arabic font support */
+body[dir="rtl"] {
+  font-family: 'Cairo', 'Segoe UI', sans-serif;
+}
+
+body[dir="ltr"] {
+  font-family: 'Segoe UI', 'Cairo', sans-serif;
+}
