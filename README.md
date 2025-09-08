@@ -35,7 +35,7 @@ The app is designed **Arabic-first** because I believe our language deserves bet
 
 <div align="center">
 
-**[⬇️ Download Hayati-App-Portable.zip](https://github.com/moazmo/hayati/releases/latest)**
+**[⬇️ Download Hayati-App-Portable.zip](https://github.com/moazmo/hayati/releases)**
 
 ![Windows](https://img.shields.io/badge/Windows-10%2F11-blue?logo=windows&logoColor=white)
 ![Size](https://img.shields.io/badge/Size-~335MB-green)
@@ -43,8 +43,15 @@ The app is designed **Arabic-first** because I believe our language deserves bet
 
 </div>
 
-#### 🚀 Quick Start:
-1. **Download** the portable ZIP file from [releases](https://github.com/moazmo/hayati/releases/latest)
+> � **Release Status**: GitHub release is being prepared. The Windows executable is ready and tested!
+> 
+> **Alternative Download Options:**
+> - 🔄 **Building from Source**: Clone repo and run `npm run package:win`
+> - 💬 **Contact**: Open an issue for direct download link
+> - ⏳ **Coming Soon**: Automated releases will be available shortly
+
+#### 🚀 Quick Start (Once Downloaded):
+1. **Download** the portable ZIP file (335MB)
 2. **Extract** to any folder on your computer
 3. **Double-click** `حياتي - Hayati.exe`
 4. **Start** organizing your life!
