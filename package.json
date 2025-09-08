@@ -11,12 +11,6 @@
     "build": "npm run build:main && npm run build:renderer",
     "build:main": "tsc -p tsconfig.main.json && copy src\\main\\preload.js dist\\main\\main\\preload.js",
     "build:renderer": "vite build",
-    "package": "npm run build && electron-builder",
-    "package:win": "npm run build && electron-builder --win",
-    "package:portable": "npm run build && electron-builder --win portable",
-    "package:installer": "npm run build && electron-builder --win nsis",
-    "package:all": "npm run build && electron-builder --win --mac --linux",
-    "dist": "npm run package:win",
     "preview": "vite preview"
   },
   "keywords": [
@@ -43,7 +37,6 @@
     "concurrently": "^8.2.2",
     "cross-env": "^10.0.0",
     "electron": "^29.1.0",
-    "electron-builder": "^24.13.3",
     "typescript": "^5.2.2",
     "vite": "^5.1.4"
   },
@@ -62,95 +55,5 @@
     "react-router-dom": "^6.22.1",
     "sqlite3": "^5.1.7",
     "styled-components": "^6.1.8"
-  },
-  "build": {
-    "appId": "com.moazmo.hayati",
-    "productName": "حياتي - Hayati",
-    "copyright": "Copyright © 2024 Moaz Mohamed. All rights reserved.",
-    "directories": {
-      "output": "release",
-      "buildResources": "build"
-    },
-    "files": [
-      "dist/**/*",
-      "node_modules/**/*",
-      "!node_modules/**/*.{md,txt,map}",
-      "!node_modules/**/test/**",
-      "!node_modules/**/docs/**"
-    ],
-    "nodeGypRebuild": false,
-    "buildDependenciesFromSource": false,
-    "npmRebuild": false,
-    "electronDownload": {
-      "cache": null
-    },
-    "compression": "normal",
-    "forceCodeSigning": false,
-    "win": {
-      "target": [
-        {
-          "target": "nsis",
-          "arch": [
-            "x64"
-          ]
-        },
-        {
-          "target": "portable",
-          "arch": [
-            "x64"
-          ]
-        }
-      ],
-      "requestedExecutionLevel": "asInvoker",
-      "artifactName": "${productName}-${version}-${arch}.${ext}",
-      "verifyUpdateCodeSignature": false,
-      "sign": null
-    },
-    "nsis": {
-      "oneClick": false,
-      "allowToChangeInstallationDirectory": true,
-      "createDesktopShortcut": true,
-      "createStartMenuShortcut": true,
-      "shortcutName": "حياتي - Hayati",
-      "deleteAppDataOnUninstall": false,
-      "runAfterFinish": true,
-      "menuCategory": "Productivity",
-      "differentialPackage": false
-    },
-    "portable": {
-      "artifactName": "${productName}-${version}-portable.${ext}"
-    },
-    "mac": {
-      "target": [
-        {
-          "target": "dmg",
-          "arch": [
-            "x64",
-            "arm64"
-          ]
-        }
-      ],
-      "icon": "build/icon.icns",
-      "category": "public.app-category.productivity"
-    },
-    "linux": {
-      "target": [
-        {
-          "target": "AppImage",
-          "arch": [
-            "x64"
-          ]
-        },
-        {
-          "target": "deb",
-          "arch": [
-            "x64"
-          ]
-        }
-      ],
-      "icon": "build/icon.png",
-      "category": "Office"
-    },
-    "publish": null
   }
 }

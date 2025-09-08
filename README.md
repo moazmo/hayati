@@ -49,25 +49,7 @@ The app is designed Arabic-first because I believe our language deserves better 
 - Export/import your data anytime
 - Dark and light themes
 
-## 📥 Download & Quick Start
-
-### 🎯 Ready to Use - Windows Executable
-
-**[⬇️ Download Hayati-App-Portable.zip](https://github.com/moazmo/hayati/releases/latest)**
-
-- **Size:** 137 MB
-- **Platform:** Windows 10/11 (64-bit)  
-- **Installation:** Not required - just extract and run!
-
-**Quick Start:**
-1. Download the portable ZIP file from releases
-2. Extract to any folder on your computer
-3. Double-click `حياتي - Hayati.exe`
-4. Start organizing your life!
-
----
-
-## 🛠️ Development Setup
+## �️ Getting Started
 
 ### Prerequisites
 
@@ -88,16 +70,12 @@ The app is designed Arabic-first because I believe our language deserves better 
    npm install
    ```
 
-3. **Start development server**
+3. **Start the app**
    ```bash
    npm run dev
    ```
 
-4. **Build for production**
-   ```bash
-   npm run build
-   npm run package
-   ```
+The app will open in Electron with a live-reloading development environment.
 
 ## Development
 

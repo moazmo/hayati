@@ -33,11 +33,50 @@ class App {
       this.mainWindow.loadURL('http://localhost:3000');
       // DevTools can be opened manually with F12 or Ctrl+Shift+I
     } else {
-      this.mainWindow.loadFile(path.join(__dirname, '../renderer/index.html'));
+      // Try multiple possible paths for the renderer
+      const possiblePaths = [
+        path.join(__dirname, '../../renderer/index.html'),
+        path.join(__dirname, '../renderer/index.html'),
+        path.join(process.resourcesPath, 'app/dist/renderer/index.html'),
+        path.join(app.getAppPath(), 'dist/renderer/index.html')
+      ];
+      
+      let rendererPath = possiblePaths[0];
+      console.log('App path:', app.getAppPath());
+      console.log('__dirname:', __dirname);
+      console.log('process.resourcesPath:', process.resourcesPath);
+      
+      // Find the first path that exists
+      const fs = require('fs');
+      for (const testPath of possiblePaths) {
+        console.log('Testing path:', testPath);
+        if (fs.existsSync(testPath)) {
+          rendererPath = testPath;
+          console.log('Found renderer at:', rendererPath);
+          break;
+        }
+      }
+      
+      this.mainWindow.loadFile(rendererPath);
     }
 
     this.mainWindow.once('ready-to-show', () => {
       this.mainWindow?.show();
+      // In development, open DevTools for debugging
+      if (process.env.NODE_ENV === 'development') {
+        this.mainWindow?.webContents.openDevTools();
+      }
+    });
+
+    // Add error handling for renderer process
+    this.mainWindow.webContents.on('did-fail-load', (event, errorCode, errorDescription, validatedURL) => {
+      console.error('Failed to load:', validatedURL, 'Error:', errorDescription);
+      // Try alternative path if main path fails
+      if (!validatedURL.includes('localhost')) {
+        const fallbackPath = path.join(process.resourcesPath, 'app/dist/renderer/index.html');
+        console.log('Trying fallback path:', fallbackPath);
+        this.mainWindow?.loadFile(fallbackPath);
+      }
     });
 
     this.mainWindow.on('closed', () => {
