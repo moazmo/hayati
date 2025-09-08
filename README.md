@@ -1,6 +1,28 @@
 # حياتي - Hayati
 
-**نظم حياتك بذكاء** | *Organize your life intelligently*
+**نظم حياتك بذكاء** | *Organi- Dark and light themes
+
+## 📥 Download & Installation
+
+### 🎯 Ready to Use - Windows Executable
+
+**[⬇️ Download Hayati-App-Portable.zip](https://github.com/moazmo/hayati/releases/latest)**
+
+- **Size:** ~335 MB
+- **Platform:** Windows 10/11 (64-bit)  
+- **Installation:** Not required - just extract and run!
+
+**Quick Start:**
+1. Download the portable ZIP file from releases
+2. Extract to any folder on your computer
+3. Double-click `حياتي - Hayati.exe`
+4. Start organizing your life!
+
+---
+
+## 🛠️ Development Setup
+
+### Prerequisitesur life intelligently*
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-blue.svg)](https://www.typescriptlang.org/)

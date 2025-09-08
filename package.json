@@ -11,6 +11,8 @@
     "build": "npm run build:main && npm run build:renderer",
     "build:main": "tsc -p tsconfig.main.json && copy src\\main\\preload.js dist\\main\\main\\preload.js",
     "build:renderer": "vite build",
+    "package:win": "npm run build && npx @electron/packager . \"حياتي - Hayati\" --platform=win32 --arch=x64 --out=dist-packaged --overwrite --asar",
+    "dist": "npm run package:win",
     "preview": "vite preview"
   },
   "keywords": [
@@ -28,6 +30,7 @@
     "url": "https://github.com/moazmo/hayati.git"
   },
   "devDependencies": {
+    "@electron/packager": "^18.4.4",
     "@electron/rebuild": "^4.0.1",
     "@types/better-sqlite3": "^7.6.13",
     "@types/node": "^20.11.24",
